@@ -91,7 +91,7 @@ Project Link: [https://github.com/antoineBr/markdown-cleaner-ai](https://github.
 
 ---
 
-**Made with ❤️ by Antoine Brossault **
+**Made with ❤️ by Antoine Brossault**
 
 ### Star the Project ⭐
 If you find this project useful, please give it a star on GitHub!
