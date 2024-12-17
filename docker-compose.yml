@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  markdown-cleaner:
+    build: 
+      context: .
+      args:
+        - OPENAI_API_KEY=${OPENAI_API_KEY}
+    ports:
+      - "3001:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    
+  # Optional: Add monitoring or logging services here
+  # For example:
+  # prometheus:
+  #   image: prom/prometheus
+  #   volumes:
+  #     - ./prometheus.yml:/etc/prometheus/prometheus.yml
+  #   ports:
+  #     - "9090:9090"

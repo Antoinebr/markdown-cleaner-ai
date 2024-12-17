@@ -1,0 +1,36 @@
+# Dependency directories
+node_modules
+npm-debug.log
+
+# Environment variables
+.env
+
+# Git
+.git
+.gitignore
+
+# macOS system files
+.DS_Store
+
+# Development and build artifacts
+*.log
+build
+dist
+
+# Testing
+coverage
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.orig
+
+# Miscellaneous
+README.md
+CHANGELOG.md
+LICENSE
