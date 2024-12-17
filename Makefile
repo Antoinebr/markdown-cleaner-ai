@@ -37,7 +37,7 @@ build:
 # Run Docker container
 .PHONY: run
 run: build
-	@docker run -v $(pwd)/.env:/app/.env -d $(DOCKER_RUN_FLAGS) $(DOCKER_IMAGE)
+	@docker run -v ./.env:/app/.env -d $(DOCKER_RUN_FLAGS) $(DOCKER_IMAGE)
 	@echo "Container $(CONTAINER_NAME) is running on http://localhost:$(DOCKER_PORT)"
 
 # Stop Docker container

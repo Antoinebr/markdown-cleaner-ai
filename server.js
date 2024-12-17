@@ -9,11 +9,18 @@ import dotenv from 'dotenv';
 // Load environment variables
 dotenv.config();
 
+// check if the environment variables are set
+if (!process.env.OPENAI_API_KEY) {
+  console.error('🚧 OPENAI_API_KEY is not set');
+  process.exit(1);
+}
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
 
 // Middleware
 app.use(cors());
